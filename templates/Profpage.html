@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css')}}">
+    <script src="{{ url_for('static', filename='script/script.js')}}"></script>
+    <script src="script.js" defer></script>
+    <title>Profile Page</title>
+</head>
+<body>
+    <header class="intro">
+        <h1>
+            Meet Our Team
+        </h1>
+    </header>
+    <section class="profile-container" id="profiles">
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/DELOS REYES.png')}}" data-new-src="{{ url_for('static', filename='images/DELOS REYES1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/DELOS REYES.png')}}" alt="pic">
+            <div class="info">
+                <h1>Kean Angela Delos Reyes</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/GUMAFELIX.jpg')}}" data-new-src="{{ url_for('static', filename='images/GUMAFELIX1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/GUMAFELIX.jpg')}}" alt="pic">
+            <div class="info">
+                <h1>Mary Ann Gumafelix</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/matiga.jpg')}}" data-new-src="{{ url_for('static', filename='images/matiga1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/matiga.jpg')}}" alt="pic">
+            <div class="info">
+                <h1>Samantha Heart Matiga</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/Perez.png')}}" data-new-src="{{ url_for('static', filename='images/PEREZ1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/Perez.png')}}" alt="pic">
+            <div class="info">
+                <h1>Lea Nikka Perez</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/Roxas.jpg')}}" data-new-src="{{ url_for('static', filename='images/Roxas1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/Roxas.jpg')}}" alt="Delos Reyes">
+            <div class="info">
+                <h1>Angeline Roxas</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/sutelleza.jpeg')}}" data-new-src="{{ url_for('static', filename='images/sutelleza1.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/sutelleza.jpeg')}}" alt="pic">
+            <div class="info">
+                <h1>John Keybird Sutelleza</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>        
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/bulado.jpg')}}" data-new-src="{{ url_for('static', filename='images/tristan.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/bulado.jpg')}}" alt="pic">
+            <div class="info">
+                <h1>Arvey Tristan Bulado</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+        <div class="profile" data-original-src="{{ url_for('static', filename='images/berte.png')}}" data-new-src="{{ url_for('static', filename='images/Berte.jpg')}}" data-state="original">
+            <img src="{{ url_for('static', filename='images/berte.png')}}" alt="pic">
+            <div class="info">
+                <h1>Gary Delfin Berte</h1>
+                <p>Computer Engineering</p>
+                <p>Polytechnic University of the Philippines</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

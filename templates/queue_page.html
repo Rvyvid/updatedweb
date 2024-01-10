@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue and Deque Page</title>
+</head>
+<body>
+    <h1>Queue and Deque Page</h1>
+
+    <h2>Queue Contents:</h2>
+    {% if my_queue.is_empty() %}
+        <p>Queue is empty.</p>
+    {% else %}
+        <ul>
+            {% for item in my_queue %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h2>Deque Contents:</h2>
+    {% if my_deque.is_empty() %}
+        <p>Deque is empty.</p>
+    {% else %}
+        <ul>
+            {% for item in my_deque %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: url('../images/river.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+h1 {
+    margin-top: 5rem;
+    color: #FFBF80;
+    font-size: 50px;
+
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+#alert {
+    margin-bottom: auto;
+}
+
+.btn-primary {
+    border-color: #A64DFF;
+    background-color: #A64DFF;
+    color: #08001A;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    color: #08001A;
+    background-color: #6600CC;
+    border-color: #6600CC;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mb-3{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-label{
+    color: #FFDD99;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-label1{
+    color: #FFDD99;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-control {
+    background-color: white;
+    color: #33004D;
+    font-weight: bold;
+}
+
+.form-select {
+    background-color: white;
+    color: #33004D;
+    font-weight: bold;
+}
+
+h5{
+    color: #FFDD99;
+    font-size: 24px;
+    font-weight: bold;
+}

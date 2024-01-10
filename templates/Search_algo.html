@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+    <title>Group 5 - Search Algorithms</title>
+</head>
+
+<body>
+    <h1 class="name">Group 5 - Search Algorithms</h1>
+    <div class="container">
+        <h5 class="mt-5">Search Algorithms Comparison</h5>
+        <div class="form-container">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="array" class="form-label"><bold>Array</bold></label>
+                    <textarea class="form-control " id="array" name="array" rows="1">{{ test_data }}</textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="target" class="form-label"><bold>Target</bold></label>
+                    <input type="text" class="form-control" id="target" name="target"
+                        placeholder="Enter the target integer" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dataset_size" class="form-label1"><bold>Choose Dataset Size</bold></label>
+                    <select class="form-select" id="dataset_size" name="dataset_size">
+                        <option value="100" {% if dataset_size == 100 %}selected{% endif %}>Small Data Set = 100</option>
+                        <option value="1000" {% if dataset_size == 1000 %}selected{% endif %}>Medium Data Set = 1000</option>
+                        <option value="10000" {% if dataset_size == 10000 %}selected{% endif %}>Large Data Set = 10000</option>
+                    </select>
+                </div>
+                <label for="search_type" class="form-label1"><bold>Search Algorithm</bold></label>
+                <select class="form-select mb-3" id="search_type" name="search_type">
+                    <option value="linear">Linear Search</option>
+                    <option value="binary">Binary Search</option>
+                    <option value="ternary">Ternary Search</option>
+                    <option value="exponential">Exponential Search </option>
+                    <option value="interpolation">Interpolation Search </option>
+                    <option value="jump">Jump Search</option>
+                </select>
+                <button type="submit" class="btn-primary">Search</button>
+            </form>
+            {% if result != None %}
+            <div class="alert alert-success mt-3" role="alert" id="Alert">
+                Target found at index {{ result }} using {{ search_type }} method in {{ execution_time }} milliseconds.
+            </div>
+            {% endif %}
+            {% if error %}
+            <div class="alert alert-danger mt-3" role="alert">
+                {{ error }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+
+</html>
